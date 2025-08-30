@@ -1,13 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CaringFirst</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caring First</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 150px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077b6;
+    }
+    .opportunities ul {
+      list-style: none;
+      padding: 0;
+    }
+    .opportunities li {
+      background: white;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005f86;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; margin: 40px; text-align: center;">
-  <h1>Welcome to CaringFirst</h1>
-  <p>Our mission is to provide exceptional healthcare and support services.</p>
-  <p>Website is under construction. Stay tuned!</p>
+<body>
+  <header>
+    <img src="logo.png" alt="Caring First Logo">
+    <h1>Welcome to Caring First</h1>
+    <p>Building Connections. Creating Opportunities. Serving with Care.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Caring First is dedicated to securing government, agency, and private contracts that provide
+      meaningful opportunities for qualified professionals. Our mission is to deliver exceptional
+      staffing solutions by employing skilled, trained, and passionate individuals who are ready
+      to serve our communities with excellence.
+    </p>
+    <p>
+      We also partner with organizations and subcontractors to expand opportunities and provide
+      the best possible services across healthcare and other industries.
+    </p>
+  </section>
+
+  <section class="opportunities" id="opportunities">
+    <h2>Available Opportunities</h2>
+    <ul>
+      <li><strong>Healthcare Case Manager</strong> – Apply today to join our growing network.</li>
+      <li><strong>Administrative Support Specialist</strong> – Remote & hybrid positions available.</li>
+      <li><strong>Community Outreach Coordinator</strong> – Work directly with local agencies.</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Q: How can I apply for a position?</strong><br>
+    A: Simply fill out the contact form below and upload your resume.</p>
+    <p><strong>Q: Do you work with subcontractors?</strong><br>
+    A: Yes, we welcome collaborations with agencies and subcontractors.</p>
+    <p><strong>Q: What industries do you focus on?</strong><br>
+    A: Primarily healthcare and community-based services, but we adapt to various contract needs.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <label for="resume">Upload Resume (optional)</label>
+      <input type="file" id="resume" name="resume">
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Caring First. All rights reserved.</p>
+  </footer>
 </body>
 </html>
